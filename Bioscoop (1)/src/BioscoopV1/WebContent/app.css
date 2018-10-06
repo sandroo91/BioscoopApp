@@ -1,0 +1,88 @@
+/*General Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #000;
+    background-color: gray;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+}
+
+/*---headers---*/
+#movie-list {
+
+    font-size: 32px;
+    color: cornflowerblue;
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    background-color: lightyellow;
+}
+
+button {
+    font-size: 20px;
+    background-color: #eee;
+    padding: 12px;
+    box-shadow: 0 1px 1px black;
+    margin: 10px;
+}
+
+.controls, .log {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 6px #ccc;
+}
+.log ul {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log ul li {
+    margin: 5px;
+}
+#home {
+    background-color: #ff7367;
+}
+
+#home:hover {
+    background-color: #ff3f43;
+}
+
+#programma {
+    background-color: #ffaf4f;
+}
+
+#programma:hover {
+    background-color: #ff9a2b;
+}
+
+#acties {
+    background-color: #aaffb0;
+}
+
+#acties:hover {
+    background-color: #76ff7e;
+}
+
+#inloggen {
+    background-color: #ffffff;
+}
+
+#inloggen:hover {
+    background-color: #c7c7c7;
+}
