@@ -4,28 +4,37 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import vueResource from 'vue-resource'
 import VueRouter from 'vue-router'
+import 'vue-resize/dist/vue-resize.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Users from './components/Users'
 import Test from './components/test'
 import Programma from './components/Programma'
+import Nieuwe_test from './components/Nieuwe test'
 
+import VueCarousel from 'vue-carousel';
+import VueResize from 'vue-resize'
 import { Dropdown } from 'bootstrap-vue/es/components';
 import bDropdown from  'bootstrap-vue/es/components/dropdown/dropdown';
 import bCarousel from 'bootstrap-vue/es/components/carousel/carousel';
 import { Carousel } from 'bootstrap-vue/es/components';
 import bTable from 'bootstrap-vue/es/components/table/table';
+import bCarouselSlide from 'bootstrap-vue/es/components/carousel/carousel-slide';
 
-Vue.use(Carousel);
+Vue.component('b-carousel-slide',bCarouselSlide);
 Vue.component('b-carousel', bCarousel);
 Vue.component('b-dropdown', bDropdown);
 Vue.component('b-table', bTable);
+Vue.use(VueCarousel);
+Vue.use(bCarouselSlide);
+Vue.use(VueResize);
+Vue.use(Carousel);
 Vue.use(Dropdown);
 Vue.use(BootstrapVue);
 Vue.use(vueResource);
 Vue.use(VueRouter);
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 const router = new VueRouter({
   mode: 'history',
@@ -33,7 +42,7 @@ const router = new VueRouter({
   routes: [
     {path: '/', component: Users},
     {path: '/test', component: Test},
-    {path: '/Programma', component: Programma}
+    {path: '/Programma', component: Programma},
   ]
 });
 
@@ -41,13 +50,12 @@ const router = new VueRouter({
 new Vue({
   router,
   template: `
-    <div id="app">
+    <div id="app" style="margin-left: 50px; margin-right: 50px;">
       <br>
-        <h1 align="center">Welkom bij Vue Cinema</h1><img id="logo" src="./assets/logo.png" height="123px" width="123px" align="right">
+        <h1 align="center">Welkom bij Retro Cinema</h1><span></span><img id="logo" src="assets/retro.PNG.png" height="150px" width="150px" align="right">
         <button><router-link to="/">Users</router-link></button>
         <button><router-link to="/test">Test</router-link></button> 
         <button><router-link to="/Programma">Programma</router-link></button> 
-      
       <router-view></router-view>
     </div>
   `,

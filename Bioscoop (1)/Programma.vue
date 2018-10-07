@@ -11,69 +11,66 @@
       <b-dropdown-item-button>Zaterdag</b-dropdown-item-button>
       <b-dropdown-item-button>Zondag</b-dropdown-item-button>
     </b-dropdown>
-    <b-table class="tijd" striped hover :items="items" :fields="fields" align="center"></b-table>
+    <div style="margin-left: 160px;">
+    <b-table class="tijd" striped hover :items="items" :fields="fields"></b-table>
+    </div>
     <br>
-    <h2 align="center">Binnenkort in Vue Cinema</h2>
-    <div>
-    <b-carousel id="carousel1"
-                style="text-shadow: 1px 1px 2px #333;"
-                controls
-                indicators
-                background="#ababab"
-                :interval="8000"
+    <h2 align="center">Binnenkort in Retro Cinema</h2>
 
-                v-model="slide"
-                @sliding-start="onSlideStart"
-                @sliding-end="onSlideEnd"
-    >
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-          src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="Images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-100"
-             src="images/aquaman.jpg" alt="image slot">
-      </b-carousel-slide>
+      <!-- CAROUSEL CODE HIERONDER -->
+    <div align="center">
+      <b-carousel id="carousel1"
+                  style="text-shadow: 1px 1px 2px #333; width: 960px; height: 480px;"
+                  controls
+                  indicators
+                  background="#ababab"
+                  :interval="5000"
+                  v-model="slide"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd"
+      >
 
-      <p class="mt-4">
+        <!-- Text slides with image -->
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
+                          style="width: 960px; height: 480px;"
+        ></b-carousel-slide>
+
+      </b-carousel>
+
+  <!--    <p class="mt-4">
         Slide #: {{ slide }}<br>
         Sliding: {{ sliding }}
       </p>
-
-    </b-carousel>
+  -->
     </div>
+
 
 
 
