@@ -11,7 +11,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Users from './components/Users'
 import Test from './components/test'
 import Programma from './components/Programma'
-import Nieuwe_test from './components/Nieuwe test'
+import Home from './components/Home'
 
 import VueCarousel from 'vue-carousel';
 import VueResize from 'vue-resize'
@@ -40,7 +40,8 @@ const router = new VueRouter({
   mode: 'history',
   base: __dirname,
   routes: [
-    {path: '/', component: Users},
+    {path: '/', component: Home},
+    {path: '/Users', component: Users},
     {path: '/test', component: Test},
     {path: '/Programma', component: Programma},
   ]
@@ -52,8 +53,9 @@ new Vue({
   template: `
     <div id="app" style="margin-left: 50px; margin-right: 50px;">
       <br>
-        <h1 align="center">Welkom bij Retro Cinema</h1><span></span><img id="logo" src="assets/retro.PNG.png" height="150px" width="150px" align="right">
-        <button><router-link to="/">Users</router-link></button>
+        <h1 align="center">Welkom bij Retro Cinema</h1><span></span><img src="../assets/retrocinema.jpg" align="right" style="height: 150px; width: 150px;" alt="Logo" />
+        <button><router-link to="/">Home</router-link></button>
+        <button><router-link to="/Users">Users</router-link></button>
         <button><router-link to="/test">Test</router-link></button> 
         <button><router-link to="/Programma">Programma</router-link></button> 
       <router-view></router-view>

@@ -20,7 +20,7 @@
       <!-- CAROUSEL CODE HIERONDER -->
     <div align="center">
       <b-carousel id="carousel1"
-                  style="text-shadow: 1px 1px 2px #333; width: 960px; height: 480px;"
+                  style="text-shadow: 1px 1px 2px #333; width: 280px; height: 160px;"
                   controls
                   indicators
                   background="#ababab"
@@ -31,37 +31,36 @@
       >
 
         <!-- Text slides with image -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=52"
-                          style="width: 960px; height: 480px;"
-        ></b-carousel-slide>
-
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/creed2.jpg" alt="image slot"
+               style="width: 280px; height: 160px;"/>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/dunkirk.jpg" alt="image slot"
+               style="width: 280px; height: 160px;">
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/fantasticbeasts.jpg" alt="image slot"
+               style="width: 280px; height: 160px;">
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/firstman.jpg" alt="image slot"
+               style="width: 280px; height: 160px;">
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/halloween.jpg" alt="image slot"
+               style="width: 280px; height: 160px;">
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100"
+               src="../assets/hunterkiller.jpg" alt="image slot"
+               style="width: 280px; height: 160px;">
+        </b-carousel-slide>
       </b-carousel>
 
   <!--    <p class="mt-4">
