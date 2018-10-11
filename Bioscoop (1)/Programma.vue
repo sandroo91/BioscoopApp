@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <body style="background-color: slategray;">
+
     <br>
     <br>
     <b-dropdown text="Kies een dag:" class="m-2">
@@ -20,7 +21,7 @@
       <!-- CAROUSEL CODE HIERONDER -->
     <div align="center">
       <b-carousel id="carousel1"
-                  style="text-shadow: 1px 1px 2px #333; width: 280px; height: 160px;"
+                  style="text-shadow: 1px 1px 2px #333; width: 280px; height: 160px; margin-bottom: 50px;"
                   controls
                   indicators
                   background="#ababab"
@@ -28,6 +29,7 @@
                   v-model="slide"
                   @sliding-start="onSlideStart"
                   @sliding-end="onSlideEnd"
+
       >
 
         <!-- Text slides with image -->
@@ -68,7 +70,9 @@
         Sliding: {{ sliding }}
       </p>
   -->
+
     </div>
+  >
 
 
 
@@ -77,6 +81,7 @@
 
 
   </div>
+  </body>
 </template>
 
 <script>
