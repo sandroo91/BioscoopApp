@@ -51,14 +51,16 @@ const router = new VueRouter({
 new Vue({
   router,
   template: `
-    <div id="app" style="margin-left: 50px; margin-right: 50px;">
+  <body style="background-color: slategray;">
+    <div id="app" style="margin-left: 50px; margin-right: 50px; background-color: slategray">
       <br>
-        <h1 align="center">Welkom bij Retro Cinema</h1><span></span><img src="../assets/retrocinema.jpg" align="right" style="height: 150px; width: 150px;" alt="Logo" />
-        <button><router-link to="/">Home</router-link></button>
-        <button><router-link to="/Users">Users</router-link></button>
-        <button><router-link to="/test">Test</router-link></button> 
-        <button><router-link to="/Programma">Programma</router-link></button> 
+        <h1 align="center">Welkom bij Retro Cinema</h1><span></span><img src="../src/assets/retrocinema.jpg" align="right" style="height: 150px; width: 150px;" alt="Logo" />
+        <b-button variant="warning"><router-link to="/">Home</router-link></b-button>
+        <b-button variant="warning"><router-link to="/Users">Users</router-link></b-button>
+        <b-button variant="warning"><router-link to="/test">Test</router-link></b-button> 
+        <b-button variant="warning"><router-link to="/Programma">Programma</router-link></b-button> 
       <router-view></router-view>
     </div>
+  </body>
   `,
 }).$mount('#app')
