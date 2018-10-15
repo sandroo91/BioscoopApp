@@ -1,6 +1,6 @@
 <template>
   <body style="background-color: slategray;">
-<test></test>
+
     <br>
     <br>
     <b-dropdown text="Kies een dag:" class="m-2">
